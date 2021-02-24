@@ -26,6 +26,6 @@ In this project, we aim to build a Biometric-based Attendance Management System.
 
 # ER Diagram
 
-![ER diagram](./assets/ER diagram.png)
+![ER diagram](./Assets/ER diagram.png)
 
 

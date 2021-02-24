@@ -8,8 +8,15 @@ In this project, we aim to build a Biometric-based Attendance Management System.
 ## Input Tables: 7+1 live data table
 - **[In_AcademicCalender]**:-This table contains  information about the semester, mid-sems and end-sems.
 - **[In_Mstr_Biometric]**:-This table contains information about the biometric-sensors that are present in the classrooms.
-- **[In_Mstr_CourseList]:-It has information about the courses and the faculty teaching them.
-                     It has three fields 
+- **[In_Mstr_CourseList]**:-It has information about the courses and the faculty teaching them.
+- **[In_Mstr_Holidays]**:-This is a holiday calendar table which is required so that we can calculate the accurate number of scheduled classes in the given semester
+- **[In_Mstr_Student]**:-This table contains the complete details of the student like their name ,id, email,phone no.etc.
+- **[In_Mstr_StudentCoursesList]**:-This contains the information about courses taken by each student for that particular semester.
+- **[In_Timetable]**:- This is the timetable providing the information regarding the course day, time and classroom.
+- **[In_BiometricLiveData]**:- This table records live information about the punching of attendance by the student at the beginning and the end of the class along with the biometric machine id and the punching time. This table will be processed at the end of the day to generate the required output reports.
+
+
+
 
 
 

@@ -15,11 +15,17 @@ In this project, we aim to build a Biometric-based Attendance Management System.
 - **[In_Timetable]**:- This is the timetable providing the information regarding the course day, time and classroom.
 - **[In_BiometricLiveData]**:- This table records live information about the punching of attendance by the student at the beginning and the end of the class along with the biometric machine id and the punching time. This table will be processed at the end of the day to generate the required output reports.
 
+## Staging Tables:
+- **[Stg_StudentTimeTable]**:-This table makes a timetable for  students  according to the courses taken by them using In_Mstr_StudentCoursesList and In_Timetable.
+- **[Stg_StudentTimeTable]**:-This table makes a timetable for  students  according to the courses taken by them using In_Mstr_StudentCoursesList and In_Timetable.
+- **[Stg_ValidAttendance]** :-This table checks whether a student has marked a valid attendance or not by comparing it with the courses they have taken and their corresponding time and classroom.
 
+## Output Tables:
+- **[Out_StudentCourseAttendance]**:- This is the output table to display the attendance along with percentage and the details of the student in each course. A small code is also commented if someone wants to view the attendance of the single person. For that a variable is declared which can take the ID from the login software and then match it with the entries present in the table to display the result.
+- **[Out_TeacherCoursewiseAttendance]**:-Similarly teachers can check which students have less attendance in their courses. The name can be from the login software. They can filter the result by their course Ids.They can also set Parameters like Threshold attendance. This table also gives the details of the students like email and contact number so that the instructor can reach out to them regarding their falling attendance.
 
+# ER Diagram
 
-
-
-# Basic Working
+![ER diagram](./assets/ER diagram.png)
 
 
